@@ -15,7 +15,7 @@
 	<PropertyGroup>
 		<Version>1.7.8</Version>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<RazorCompileOnPublish>false</RazorCompileOnPublish>
 		<Title>Live Reload Server</Title>
 		<Product>Live Reload Server</Product>
@@ -69,7 +69,7 @@
 		<PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.5.2" />
 		<PackageReference Include="Westwind.Utilities" Version="5.1.11" />
 		<PackageReference Include="Westwind.Utilities.Data" Version="5.1.11" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.8" />
 		<PackageReference Include="NuGet.Protocol" Version="6.14.0" />
 		<PackageReference Include="NuGet.Packaging" Version="6.14.0" />
 	</ItemGroup>
