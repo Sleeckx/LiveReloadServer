@@ -139,9 +139,6 @@ namespace LiveReloadServer
         public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
         {
 
-            if (ServerConfig.UseLiveReload)
-                app.UseLiveReload();
-
             if (ServerConfig.DetailedErrors)
                 app.UseDeveloperExceptionPage();
             else
@@ -152,6 +149,9 @@ namespace LiveReloadServer
 
             if (ServerConfig.VirtualPath != "/") 
                 app.UsePathBase(ServerConfig.VirtualPath);
+
+            if (ServerConfig.UseLiveReload)
+                app.UseLiveReload();
 
             app.UseDefaultFiles(new DefaultFilesOptions
             {
